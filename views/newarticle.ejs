@@ -1,0 +1,20 @@
+<%- include("./partials/head_layout") %>
+    <form method="POST" action="/articles/submitarticle">
+        <div class="form-group mt-3">
+            <label for="text" class="form-label">Title</label>
+            <input type="text" class="form-control" id="title" name="title" />
+        </div>
+        <div class="form-group mt-3">
+            <label for="text" class="form-label">Author</label>
+            <input type="text" class="form-control" id="author" name="author" />
+        </div>
+        <div class="form-group mt-3">
+            <label for="text" class="form-label">Article</label>
+            <textarea class="form-control" id="content" name="content"></textarea>
+        </div>
+
+        <div class="form-group mt-3">
+            <button class="btn btn-primary" type="submit">Create Article</button>
+        </div>
+    </form>
+    <%- include("./partials/tail_layout") %>
